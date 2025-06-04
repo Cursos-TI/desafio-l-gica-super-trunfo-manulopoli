@@ -23,7 +23,6 @@ int main() {
     int NumeroPontosTuristicos2;
     int pibpercapta1;
     int pibpercapta2;
-    int cidadevencedora;
 
     printf ("*** Desafio Super Trunfo - Países *** \n");
        
@@ -97,14 +96,14 @@ int main() {
 
     // Lógica de comparação entre duas cartas:
    
-    printf("Carta 1 - : %s\n", cidade1, pibPerCapita1);
-    printf("Carta 2 - : %s\n", cidade2, pibPerCapita2);
+    printf("Carta 1 - %s (%s): %.2f\n", cidade1, estado1, pibPerCapita1);
+    printf("Carta 2 - %s (%s): %.2f\n", cidade2, estado2, pibPerCapita2);
 
     if (pibPerCapita1 > pibPerCapita2) {
-        printf ("Resultado: Carta 1 venceu!\n", pibPerCapita1, cidadevencedora);
+        printf ("Resultado: Carta 1 (%s) venceu!\n", cidade1 );
 
     }else {
-        printf ("Resultado: Carta 2 venceu!\n", pibPerCapita2, cidadevencedora);
+        printf ("Resultado: Carta 2 (%s) venceu!\n", cidade2);
 
 
     }
