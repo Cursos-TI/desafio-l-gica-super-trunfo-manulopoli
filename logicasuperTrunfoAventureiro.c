@@ -1,6 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 
 // Desafio Super Trunfo - Países
 // Tema 2 - Nível aventureiro - Comparação das Cartas usando Switch
@@ -19,7 +17,7 @@ int main() {
     int NumeroPontosTuristicos2;
     float densidadeDemografica1;
     float densidadeDemografica2;
-    int escolha;
+    int opcao;
 
     printf ("*** Desafio Super Trunfo - Países *** \n");
        
@@ -77,8 +75,6 @@ int main() {
 
     // Lógica de comparação entre duas cartas:
 
-    srand(time(0));
-
     printf("Escolha um dos atributos abaixo:\n");
     printf("1. População\n");
     printf("2. Área\n");
@@ -86,35 +82,78 @@ int main() {
     printf("4. Número de Pontos Turísticos\n");
     printf("5. Densidade Demográfica\n");
     printf("Escolha a opção desejada: \n");
-    scanf("%d", &escolha);
+    scanf("%d", &opcao);
 
-    switch (escolha) {
+    switch (opcao) { 
     case 1:
       printf("População Carta 1 é %d\n", populacao1);
       printf("População Carta 2 é %d\n", populacao2);
-      break;
+
+      if (populacao1 > populacao2) {
+      printf("*** Carta 1 venceu!!! ***\n");
+    
+    }  else if (populacao1 < populacao2) {
+      printf ("*** Carta 2 venceu!!! ***\n");
+
+    }  else {
+        printf ("*** Empatou!!! ***\n");
+    }
+    break;
 
     case 2:
       printf("Área Carta 1 é %f\n", area1);
       printf("Área Carta 2 é %f\n", area2);
+        if (area1 > area2) {
+      printf("*** Carta 1 venceu!!! ***\n");
+    
+    }  else if (area1 < area2) {
+      printf ("*** Carta 2 venceu!!! ***\n");
+
+    }  else {
+        printf ("*** Empatou!!! ***\n");
+    }
       break;
 
     case 3:
       printf("PIB Carta 1 é %f\n", pib1);
       printf("PIB Carta 2 é %f\n", pib2);
+        if (pib1 > pib2) {
+      printf("*** Carta 1 venceu!!! ***\n");
+    
+    }  else if (pib1 < pib2) {
+      printf ("*** Carta 2 venceu!!! ***\n");
 
+    }  else {
+        printf ("*** Empatou!!! ***\n");
+    }
       break;
     
-      case 4:
+    case 4:
       printf("Número de Pontos Turísticos Carta 1 é %d\n", NumeroPontosTuristicos1);
       printf("Número de Pontos Turísticos Carta 2 é %d\n", NumeroPontosTuristicos2);
+            if (NumeroPontosTuristicos1 > NumeroPontosTuristicos2) {
+      printf("*** Carta 1 venceu!!! ***\n");
+    
+    }  else if (NumeroPontosTuristicos1 < NumeroPontosTuristicos2) {
+      printf ("*** Carta 2 venceu!!! ***\n");
 
+    }  else {
+        printf ("*** Empatou!!! ***\n");
+    }
       break;
     
-      case 5:
+    case 5:
       printf("Densidade Demográfica Carta 1 é %f\n", densidadeDemografica1);
       printf("Densidade Demográfica Carta 2 é %f\n", densidadeDemografica1);
+            if (densidadeDemografica1 > densidadeDemografica2) {
+      printf("*** Carta 1 venceu!!! ***\n");
+    
+    }  else if (densidadeDemografica1 < densidadeDemografica2) {
+      printf ("*** Carta 2 venceu!!! ***\n");
 
+    }  else {
+        printf ("*** Empatou!!! ***\n");
+    }
       break;
 
     default:
@@ -123,20 +162,5 @@ int main() {
       
    }
 
-    if ((populacao1 > populacao2) || (area1 > area2) || (pib1 >  pib2) || (NumeroPontosTuristicos1 >  NumeroPontosTuristicos2) || (densidadeDemografica1 >  densidadeDemografica2)) {
-    printf("*** Carta 1 venceu!!! ***\n");
-    
-   } else if ((populacao1 < populacao2) || (area1 < area2) || (pib1 <  pib2) || (NumeroPontosTuristicos1 <  NumeroPontosTuristicos2) || (densidadeDemografica1 <  densidadeDemografica2)) {
-      printf ("*** Carta 2 venceu!!! ***\n");
-
-   }  else {
-        printf ("*** Empatou!!! ***\n");
-
-   }
-
-
-
     return 0;
-
-
 }
