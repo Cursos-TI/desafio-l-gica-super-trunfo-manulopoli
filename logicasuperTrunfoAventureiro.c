@@ -26,7 +26,7 @@ int main() {
     printf("Carta 1 \n");
 
     printf("Digite o País:");
-    scanf("%s", &pais1);
+    scanf("%s", pais1);
  
     printf("Digite a População:");
     scanf("%d", &populacao1);
@@ -41,7 +41,7 @@ int main() {
     scanf("%d", &NumeroPontosTuristicos1);
 
     //Cálculo da densidade populacional da Carta 1
-    float densidadeDemografica1 = (float) populacao1 / area1;
+    densidadeDemografica1 = (float) populacao1 / area1;
 
     printf("Densidade Demográfica: %.2f habitantes por km²\n", densidadeDemografica1);
 
@@ -49,7 +49,7 @@ int main() {
     printf("Carta 2 \n");
 
     printf("Digite o País:");
-    scanf("%s", &pais1);
+    scanf("%s", pais2);
 
     printf("Digite a População:");
     scanf("%d", &populacao2);
@@ -64,7 +64,7 @@ int main() {
     scanf("%d", &NumeroPontosTuristicos2);
 
     //Cálculo da densidade populacional e PIB per capita da Carta 2
-    float densidadeDemografica2 = (float) populacao2 / area2;
+    densidadeDemografica2 = (float) populacao2 / area2;
 
     printf("Densidade Demográfica: %.2f habitantes por km²\n", densidadeDemografica2);
 
@@ -86,8 +86,8 @@ int main() {
 
     switch (opcao) { 
     case 1:
-      printf("População Carta 1 é %d\n", populacao1);
-      printf("População Carta 2 é %d\n", populacao2);
+      printf("População - %s é %d\n", pais1, populacao1);
+      printf("População - %s é %d\n", pais2, populacao2);
 
       if (populacao1 > populacao2) {
       printf("*** Carta 1 venceu!!! ***\n");
@@ -101,9 +101,10 @@ int main() {
     break;
 
     case 2:
-      printf("Área Carta 1 é %f\n", area1);
-      printf("Área Carta 2 é %f\n", area2);
-        if (area1 > area2) {
+      printf("Área - %s é %f\n", pais1, area1);
+      printf("Área - %s é %f\n", pais2, area2);
+       
+       if (area1 > area2) {
       printf("*** Carta 1 venceu!!! ***\n");
     
     }  else if (area1 < area2) {
@@ -115,8 +116,9 @@ int main() {
       break;
 
     case 3:
-      printf("PIB Carta 1 é %f\n", pib1);
-      printf("PIB Carta 2 é %f\n", pib2);
+      printf("PIB - %s é %f\n", pais1, pib1);
+      printf("PIB - %s é %f\n", pais2, pib2);
+
         if (pib1 > pib2) {
       printf("*** Carta 1 venceu!!! ***\n");
     
@@ -129,9 +131,10 @@ int main() {
       break;
     
     case 4:
-      printf("Número de Pontos Turísticos Carta 1 é %d\n", NumeroPontosTuristicos1);
-      printf("Número de Pontos Turísticos Carta 2 é %d\n", NumeroPontosTuristicos2);
-            if (NumeroPontosTuristicos1 > NumeroPontosTuristicos2) {
+      printf("Número de Pontos Turísticos - %s é %d\n", pais1, NumeroPontosTuristicos1);
+      printf("Número de Pontos Turísticos - %s é %d\n", pais2, NumeroPontosTuristicos2);
+
+       if (NumeroPontosTuristicos1 > NumeroPontosTuristicos2) {
       printf("*** Carta 1 venceu!!! ***\n");
     
     }  else if (NumeroPontosTuristicos1 < NumeroPontosTuristicos2) {
@@ -143,9 +146,10 @@ int main() {
       break;
     
     case 5:
-      printf("Densidade Demográfica Carta 1 é %f\n", densidadeDemografica1);
-      printf("Densidade Demográfica Carta 2 é %f\n", densidadeDemografica1);
-            if (densidadeDemografica1 > densidadeDemografica2) {
+      printf("Densidade Demográfica - %s é %f\n", pais1, densidadeDemografica1);
+      printf("Densidade Demográfica - %s é %f\n", pais2, densidadeDemografica1);
+      
+       if (densidadeDemografica1 > densidadeDemografica2) {
       printf("*** Carta 1 venceu!!! ***\n");
     
     }  else if (densidadeDemografica1 < densidadeDemografica2) {
