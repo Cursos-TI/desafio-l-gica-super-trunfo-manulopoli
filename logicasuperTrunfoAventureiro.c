@@ -95,13 +95,13 @@ int main() {
       break;
 
     case 2:
-      printf("Área Carta 1 é %d\n", area1);
-      printf("Área Carta 2 é %d\n", area2);
+      printf("Área Carta 1 é %f\n", area1);
+      printf("Área Carta 2 é %f\n", area2);
       break;
 
     case 3:
-      printf("PIB Carta 1 é %d\n", pib1);
-      printf("PIB Carta 2 é %d\n", pib2);
+      printf("PIB Carta 1 é %f\n", pib1);
+      printf("PIB Carta 2 é %f\n", pib2);
 
       break;
     
@@ -112,8 +112,8 @@ int main() {
       break;
     
       case 5:
-      printf("Densidade Demográfica Carta 1 é %d\n", densidadeDemografica1);
-      printf("Densidade Demográfica Carta 2 é %d\n", densidadeDemografica1);
+      printf("Densidade Demográfica Carta 1 é %f\n", densidadeDemografica1);
+      printf("Densidade Demográfica Carta 2 é %f\n", densidadeDemografica1);
 
       break;
 
@@ -123,10 +123,10 @@ int main() {
       
    }
 
-    if ((populacao1 > populacao2) || (area1 > area2) || (pib1 >  pib2) || (NumeroPontosTuristicos1 >  NumeroPontosTuristicos1) || (densidadeDemografica1 >  densidadeDemografica2)) {
+    if ((populacao1 > populacao2) || (area1 > area2) || (pib1 >  pib2) || (NumeroPontosTuristicos1 >  NumeroPontosTuristicos2) || (densidadeDemografica1 >  densidadeDemografica2)) {
     printf("*** Carta 1 venceu!!! ***\n");
     
-   } else if ((populacao1 < populacao2) || (area1 < area2) || (pib1 <  pib2) || (NumeroPontosTuristicos1 <  NumeroPontosTuristicos1) || (densidadeDemografica1 <  densidadeDemografica2)) {
+   } else if ((populacao1 < populacao2) || (area1 < area2) || (pib1 <  pib2) || (NumeroPontosTuristicos1 <  NumeroPontosTuristicos2) || (densidadeDemografica1 <  densidadeDemografica2)) {
       printf ("*** Carta 2 venceu!!! ***\n");
 
    }  else {
