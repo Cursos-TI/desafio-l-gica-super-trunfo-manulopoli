@@ -149,10 +149,10 @@ int main() {
       printf("Densidade Demográfica - %s é %f\n", pais1, densidadeDemografica1);
       printf("Densidade Demográfica - %s é %f\n", pais2, densidadeDemografica1);
       
-       if (densidadeDemografica1 > densidadeDemografica2) {
+       if (densidadeDemografica1 < densidadeDemografica2) {
       printf("*** Carta 1 venceu!!! ***\n");
     
-    }  else if (densidadeDemografica1 < densidadeDemografica2) {
+    }  else if (densidadeDemografica1 > densidadeDemografica2) {
       printf ("*** Carta 2 venceu!!! ***\n");
 
     }  else {
