@@ -152,7 +152,7 @@ int main() {
         printf("%s: %.2f hab/km²\n", pais2, densidadeDemografica2);
         valor1_a = densidadeDemografica1;
         valor1_b = densidadeDemografica2;
-        printf("Vencedor: %s\n", (valor1_a > valor1_b) ? pais1 : (valor1_b > valor1_a) ? pais2 : "Empate");
+        printf("Vencedor: %s\n", (valor1_a < valor1_b) ? pais1 : (valor1_b < valor1_a) ? pais2 : "Empate");
       break;
 
       default:
@@ -205,7 +205,7 @@ int main() {
         printf("%s: %.2f hab/km²\n", pais2, densidadeDemografica2);
         valor2_a = densidadeDemografica1;
         valor2_b = densidadeDemografica2;
-        printf("Vencedor: %s\n", (valor2_a > valor2_b) ? pais1 : (valor2_b > valor2_a) ? pais2 : "Empate");
+        printf("Vencedor: %s\n", (valor2_a < valor2_b) ? pais1 : (valor2_b < valor2_a) ? pais2 : "Empate");
       break;
 
       default:
